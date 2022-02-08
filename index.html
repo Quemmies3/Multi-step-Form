@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="Form1">
+            <h3>BIO DATA</h3>
+            <input type="text" placeholder="Surname" id="surname" required/>
+            <input type="text" placeholder="Other Names" id="othernames" required/>
+            <input type="text" placeholder="Residential Address" required/>
+            <input type="email" placeholder="Email Address" required/>
+            <input type="phone" id="phone"placeholder="Phone Number" required/>
+            <h6>Marital Status</h6>
+            <select>
+                <option value="..................">...................</option>
+                <option value="Single">Single</option>
+                <option value="Single">Married</option>
+                <option value="Single">Divorced</option>
+                <option value="Single">Widowed</option>
+            </select>
+            <h6>Gender</h6>
+            <select>
+                <option value="..................">...................</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <h6>Date of Birth</h6>
+            <input type="date"/>
+
+            <div class="btn-box">
+                <button type="button" id="Next1">Next</button>
+            </div>
+        </form>
+
+        <form id="Form2">
+            <h3>SPIRITUAL DATA</h3>
+            <h6>When did you get born again?</h6>
+            <input type="date"/>
+            <h6>Where?</h6>
+            <input type="text" placeholder="Response" required/>
+            <h6>Are you Spirit-filled/speak in tongues?</h6>
+            <select>
+                <option value="......................">..........</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <h6>Where?</h6>
+            <input type="text" placeholder="Response" required/>
+            <h6>When?</h6>
+            <input type="date"/>
+            <h6>Are you baptised by immersion?</h6>
+            <select>
+                <option value="......................">..........</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <h6>Where were you baptised?</h6>
+            <input type="text" placeholder="Response" required/>
+            
+            <div class="btn-box">
+                <button type="button" id="Back1">Back</button>
+                <button type="button" id="Next2">Next</button>
+            </div>
+        </form>
+
+        <form id="Form3">
+            <h3>SPIRITUAL DATA CONT'D</h3>
+           <h6> When where you baptised?</h6>
+            <input type="date"/>
+            <h6>When did you join this ministry?</h6>
+            <input type="date"/>
+            <h6>Through whom?</h6>
+            <input type="text" placeholder="Response" required/>
+            <h6>Which ministry were you part of before Priesthood Chapel?</h6>
+            <input type="text" placeholder="Response" required/>
+            <h6>Which department did you belong to?</h6>
+            <input type="text" placeholder="Response" required/>
+
+            <div class="btn-box">
+                <button type="button" id="Back2">Back</button>
+                <button type="button" id="Next3">Next</button>
+            </div>
+        </form>
+
+        <form id="Form4">
+            <h3>EDUCATIONAL BACKGROUND</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Year of Graduation</th>
+                        <th>Qualification</th>
+                    </tr>
+                </thead>
+
+                <tbody id="insertionPoint">
+
+                </tbody>
+            </table>
+
+            <div class="form-info" align="flex-start">
+                <span><label>School Attended: </label></span>
+                <span><input id="inputSchoolAttended" type="text" class="text-center" required="" placeholder="Enter School Name"></span><br>
+                <span><label>Year of Graduation: </label></span>
+                <span><input id="inputYear" type="text" class="text-center" required="" placeholder="Enter Year"></span><br>
+                <span><label>Qualification: </label></span>
+                <span><input id="inputQualification" type="text" class="text-center" required="" placeholder="Enter Qualification"></span><br>
+            </div>
+
+            <div class="btn">
+                <button type="button" onClick="insertData()">Add Entry</button>
+            </div>
+
+            
+
+            <div class="btn-box">
+                <button type="button" id="Back3">Back</button>
+                <button type="button" id="Next4">Next</button>
+            </div>
+        </form>
+
+        <form id="Form5">
+            <h3>LEADERSHIP DATA</h3>
+            <h6>Service Unit You want to Join?</h6>
+            <input type="text" placeholder="Response" required/>
+
+            <h6>Any other information we should know about you.</h6>
+            <input type="text" placeholder="Response" required/>
+
+            <h5>Declaration</h5>
+            <span><input type="checkbox" class="checkbox" required /></span> <span> I , <input type="text" class="declaration" placeholder="Your Name" required /> confirm that every information used in this registration is true and valid.</span>
+
+            <input type="date"/>
+
+            <div class="btn-box">
+                <button type="button" id="Back4">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <dvi class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+            <div class="step-col"><small>Step 4</small></div>
+            <div class="step-col"><small>Step 5</small></div>
+        </dvi>
+    </div>
+    
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>

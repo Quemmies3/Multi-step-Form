@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro;
+    font-size: 13px;
+    color:rgb(158, 32, 137);
+}
+
+body {
+    background-image: url(banner.jpg) ;
+    background-size: cover;
+}
+
+.container {
+    width: 550px;
+    height: 580px;
+    margin: 50px auto;
+    background: rgb(246, 251, 253);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 194);
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container form {
+    width: 470px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    transition: 0.5s
+}
+
+form>input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(0, 0, 205);
+    outline: none;
+    padding: 6px 3px;
+    margin: 3px 0;
+    background: transparent;
+}
+
+form>select {
+    width: 45%;
+    padding: 6px 3px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+::placeholder {
+    color:rgb(170, 8, 111);
+}
+
+.btn-box {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form button {
+    width: 110px;
+    margin: 0 8px;
+    height: 35px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background: linear-gradient(to right, rgb(0, 0, 194), rgb(30,144,255));
+    color: rgb(228, 155, 194);
+}
+
+table {
+    width: 100%;
+    border: 1px solid rgb(17, 14, 185);
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid rgb(17, 14, 185);
+}
+
+tr:nth-child(odd) {
+    background: linear-gradient(to right, rgb(30,144,255), rgb(98, 177, 255));
+}
+
+.form-info input {
+    border: 0;
+    border-bottom: 2px solid rgb(17, 14, 185);
+    border-radius: 5px;
+    padding: 6px 3px;
+    margin: 3px 0;
+    background: transparent;
+    width: 50%;
+}
+
+.btn {
+    width: 110px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    background: linear-gradient(to right, rgb(0, 0, 194), rgb(30,144,255));
+    color: rgb(228, 155, 194);
+}
+
+#Form2 {
+    left: 550px;
+}
+
+#Form3 {
+    left: 550px;
+}
+
+#Form4 {
+    left: 550px;
+}
+
+#Form5 {
+    left: 550px;
+}
+
+.form-info {
+    margin-top:40px;
+}
+
+.step-row {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 550px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.step-col {
+    width: 110px;
+    text-align: center;
+    color: rgb(238, 139, 190);
+    position: relative;
+}
+
+#progress {
+    position: absolute;
+    height: 100%;
+    width: 90px;
+    background: linear-gradient(to right, rgb(0, 0, 194), rgb(30,144,255));
+    transform: 1s;
+}
+
+#progress::after {
+    content: ' ' ;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid rgb(30,144,255);
+}
+
+.checkbox {
+    size: 3em;
+    padding: 8px;
+}
+
+.declaration {
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px dotted rgb(0, 0, 205);
+    outline: none;
+    background: transparent;
+
+}
